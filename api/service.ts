@@ -269,6 +269,11 @@ export interface ServiceArguments extends Container {
      * set to false, the service may complete its deployment before it is fully ready to be used. Defaults to 'true'.
      */
     waitForSteadyState?: boolean;
+
+    /**
+     * Specifies if load balancing should be enabled
+     */
+    useLoadBalancer?: boolean;
 }
 
 export interface Endpoint {
